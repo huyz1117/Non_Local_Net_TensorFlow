@@ -29,7 +29,7 @@
 
 - 计算图:
 
-  ![tensorboard](/Users/apple/Desktop/paper_code/Non-local_Net/img/graph.png)
+  ![graph](/Users/apple/Desktop/paper_code/Non-local_Net/img/graph.png)
 
 - 在`MNIST`上训练结果：
 
