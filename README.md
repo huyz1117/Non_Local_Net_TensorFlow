@@ -21,7 +21,7 @@
   ![non-loca.png](./img/non-local.png)
 
 - 这个结构设置通道的数量为输入`x`通道数的一半，这样可以减少计算量，然后通过Wz的来让输出Z跟输出X通道数保持一致，这点参考了`ResNet`的`bottleneck`设计
-- 这个结构实现起来不复杂，文章这个block添加到`ResNet50`中，分别添加1（`to res4`）、5（`3 to res4 and 2 to res3`）、10个（`to every residual block in res3 and res4`）`non-local block`
+- 这个结构实现起来不复杂，文章这个`block`添加到`ResNet50`中，分别添加1（`to res4`）、5（`3 to res4 and 2 to res3`）、10个（`to every residual block in res3 and res4`）`non-local block`
 
 - 论文做的是视频分类，该代码做的实现的是在`MNIST`数据集上的分类，添加10个`non-local block`到`ResNet50`中
 
@@ -29,13 +29,14 @@
 
 - `tensorboard`:
 
-  ![tensorboard](./img/graph_run=.png)
+  ![tensorboard](./img/graph.png)
 
 - 在`MNIST`上训练结果：
 
-  ![screenshot](./img/screenshot.png)
+  ![screenshot](./img/Screenshot.png)
 
 - Reference:
+
   - CVPR2018-[https://arxiv.org/pdf/1711.07971v1.pdf](https://arxiv.org/pdf/1711.07971v1.pdf)
   - [https://github.com/titu1994/keras-non-local-nets](https://github.com/titu1994/keras-non-local-nets)
   - [https://github.com/nnUyi/Non-Local_Nets-Tensorflow](https://github.com/nnUyi/Non-Local_Nets-Tensorflow)
