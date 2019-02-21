@@ -27,13 +27,19 @@
 
 - 由于采用`ResNet50`，网络的输入尺寸为224x224，所以为了匹配尺寸，强行将28x28`pad`为224x224，纯粹是为了尺寸的匹配
 
-- `tensorboard`:
+- 计算图:
 
-  ![tensorboard](./img/graph.png)
+  ![tensorboard](/Users/apple/Desktop/paper_code/Non-local_Net/img/graph.png)
 
 - 在`MNIST`上训练结果：
 
-  ![screenshot](./img/Screenshot.png)
+  ![screenshot](/Users/apple/Desktop/paper_code/Non-local_Net/img/Screenshot.png)
+
+![accuracy](/Users/apple/Desktop/paper_code/Non-local_Net/img/accuracy.png)
+
+![loss](/Users/apple/Desktop/paper_code/Non-local_Net/img/loss.png)
+
+- 从打印出来的结果来看训练是正常的，但是不知道为什么损失函数和准确率曲线会是这样
 
 - Reference:
 
