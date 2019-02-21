@@ -18,7 +18,7 @@
 
 - `Non-local  block`结构如下：
 
-  ![non-loca.png](./img/non-local.png)
+  ![non-loca.png](./img/loss.png)
 
 - 这个结构设置通道的数量为输入`x`通道数的一半，这样可以减少计算量，然后通过Wz的来让输出Z跟输出X通道数保持一致，这点参考了`ResNet`的`bottleneck`设计
 - 这个结构实现起来不复杂，文章这个`block`添加到`ResNet50`中，分别添加1（`to res4`）、5（`3 to res4 and 2 to res3`）、10个（`to every residual block in res3 and res4`）`non-local block`
@@ -29,15 +29,15 @@
 
 - 计算图:
 
-  ![graph](/Users/apple/Desktop/paper_code/Non-local_Net/img/graph.png)
+  ![graph](./img/graph.png)
 
 - 在`MNIST`上训练结果：
 
-  ![screenshot](/Users/apple/Desktop/paper_code/Non-local_Net/img/Screenshot.png)
+  ![screenshot](./img/Screenshot.png)
 
-![accuracy](/Users/apple/Desktop/paper_code/Non-local_Net/img/accuracy.png)
+![accuracy](./img/accuracy.png)
 
-![loss](/Users/apple/Desktop/paper_code/Non-local_Net/img/loss.png)
+![loss](./img/loss.png)
 
 - 从打印出来的结果来看训练是正常的，但是不知道为什么损失函数和准确率曲线会是这样
 
